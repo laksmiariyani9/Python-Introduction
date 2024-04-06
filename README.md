@@ -64,3 +64,58 @@ A data type is an attribute associated with a piece of data that tells a compute
     - Unordered: Dictionaries do not maintain the order of key-value pairs as they are added.
     - Mutable: You can add, remove, or modify key-value pairs in a dictionary after it is created.
     - Unique Keys: Keys in a dictionary must be unique. If you try to add a duplicate key, it will overwrite the existing value associated with that key.
+
+## PYTHON LOOPS
+  - In Python, a loop is a programming construct that allows you to execute a block of code repeatedly. There are two main types of loops in Python: for loops and while loops.
+    - For Loop: A for loop is used for iterating over a sequence (such as a list, tuple, string, or range) and executing a block of code once for each element in the sequence. The general syntax of a for loop is:
+      - CODE
+        - Here, 'item' is a variable that takes the value of the next element in the sequence on each iteration.
+      - Example:
+        - CODE
+    - While Loop: A while loop is used to repeatedly execute a block of code as long as a specified condition is true. The general syntax of a while loop is:
+      - CODE
+        - The loop continues to execute as long as the condition remains True. If the condition becomes False, the loop terminates.
+          
+## PYTHON OPERATORS
+  - In Python, operators are special symbols or keywords used to perform operations on variables and values. Python supports various types of operators, which can be categorized into the following groups:
+    - Arithmetic Operators: These operators are used to perform arithmetic operations such as addition, subtraction, multiplication, division, modulus, and exponentiation. Here are the arithmetic operators in Python:
+        - + (Addition)
+        - - (Subtraction)
+        - * (Multiplication)
+        - / (Division)
+        - % (Modulus)
+        - ** (Exponentiation)
+        - // (Floor Division)
+      - Arithmetic Operators Syntax:
+        - CODE
+      - Example
+        - CODE
+          
+  - Comparison (Relational) Operators: These operators are used to compare values. They return either True or False based on the comparison result. Here are the comparison operators:
+        - == (Equal to)
+        - != (Not equal to)
+        - < (Less than)
+        - > (Greater than)
+        - <= (Less than or equal to)
+        - >= (Greater than or equal to)
+      - Comparison (Relational) Operators Syntax:
+        - CODE
+      - Example
+        - CODE
+
+## UNION
+  - In set theory, the union of two sets is a new set that contains all the distinct elements from both sets.
+  - In Python, you can perform these operations using the built-in set data type and its methods:
+    - CODE
+      
+## INTERSECTION
+  - The intersection of two sets is a new set containing only the elements that are common to both sets.
+  - In Python, you can perform these operations using the built-in set data type and its methods:
+    - CODE
+
+## DICTIONARY
+  - A dictionary in Python is an unordered collection of items. Each item in a dictionary is stored as a key-value pair.
+  - Keys are unique within a dictionary while values may not be unique.
+  - Dictionary elements can be accessed by their keys rather than their index as in lists.
+  - Here's an example of a dictionary:
+    - CODE
