@@ -65,6 +65,7 @@ A data type is an attribute associated with a piece of data that tells a compute
     - Mutable: You can add, remove, or modify key-value pairs in a dictionary after it is created.
     - Unique Keys: Keys in a dictionary must be unique. If you try to add a duplicate key, it will overwrite the existing value associated with that key.
 
+
 ## PYTHON LOOPS
   - In Python, a loop is a programming construct that allows you to execute a block of code repeatedly. There are two main types of loops in Python: for loops and while loops.
     - For Loop: A for loop is used for iterating over a sequence (such as a list, tuple, string, or range) and executing a block of code once for each element in the sequence. The general syntax of a for loop is:
@@ -76,6 +77,7 @@ A data type is an attribute associated with a piece of data that tells a compute
       - CODE
         - The loop continues to execute as long as the condition remains True. If the condition becomes False, the loop terminates.
           
+
 ## PYTHON OPERATORS
   - In Python, operators are special symbols or keywords used to perform operations on variables and values. Python supports various types of operators, which can be categorized into the following groups:
     - Arithmetic Operators: These operators are used to perform arithmetic operations such as addition, subtraction, multiplication, division, modulus, and exponentiation. Here are the arithmetic operators in Python:
@@ -103,11 +105,13 @@ A data type is an attribute associated with a piece of data that tells a compute
       - Example
         - CODE
 
+
 ## UNION
   - In set theory, the union of two sets is a new set that contains all the distinct elements from both sets.
   - In Python, you can perform these operations using the built-in set data type and its methods:
     - CODE
       
+
 ## INTERSECTION
   - The intersection of two sets is a new set containing only the elements that are common to both sets.
   - In Python, you can perform these operations using the built-in set data type and its methods:
