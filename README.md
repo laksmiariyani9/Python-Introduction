@@ -54,6 +54,69 @@ A data type is an attribute associated with a piece of data that tells a compute
     - Mutable: You can add or remove elements from a set after it is created.
     - Unique Elements: Sets do not allow duplicate elements. If you try to add a duplicate element to a set, it will be ignored.
 
+- Frozenset
+  - In Python, the frozenset data type is similar to the set data type, but with one key difference: it is immutable. This means that once a frozenset object is created, its contents cannot be changed.
+  - Frozenset objects are useful when you need to create a collection of unique, immutable elements. They are particularly handy when you need to use sets as keys in dictionaries or as elements in other sets, as sets themselves are not hashable (mutable), but frozensets are hashable (immutable).
+  - Here's how you create a frozenset object:
+    - my_frozenset = frozenset({1, 2, 3, 4, 5})
+  - You can also create a frozenset from other iterables like lists or tuples:
+    - my_frozenset = frozenset([1, 2, 3, 4, 5])
+    - my_frozenset = frozenset((1, 2, 3, 4, 5))
+
+- Bytes
+  - In Python, the bytes data type represents a sequence of bytes. Bytes objects are immutable, meaning they cannot be changed after creation. They are commonly used for handling binary data, such as reading from or writing to files, working with network protocols, and interacting with low-level system interfaces.
+  - You can create a bytes object by enclosing a sequence of bytes within a pair of single quotes (b'') or double quotes (b""). Here's an example:
+    - my_bytes = b'hello'
+      - In this example, my_bytes is a bytes object containing the ASCII-encoded bytes representing the string "hello".
+  - Bytes objects support various operations and methods for working with binary data, including:
+    - Indexing: Accessing individual bytes using index notation.
+      - CODE
+    - Slicing: Extracting a portion of the bytes object.
+      - CODE
+    - Length: Getting the length of the bytes object.
+      - CODE
+    - Converting to String: Converting the bytes object to a string using decoding.
+      - CODE
+    - Concatenation: Combining two bytes objects.
+      - CODE
+
+- Bytearray
+  - In Python, the bytearray data type is similar to the bytes data type, but with one key difference: it is mutable. This means that a bytearray object can be modified after it is created, whereas a bytes object is immutable and cannot be changed.
+  - A bytearray object represents a sequence of bytes and is commonly used for situations where you need to modify binary data in place, such as reading from or writing to files, working with network protocols, or performing low-level system interactions.
+  - You can create a bytearray object by passing a sequence of bytes to the bytearray() constructor. Here's an example:
+    - my_bytearray = bytearray(b'hello')
+      - In this example, my_bytearray is a bytearray object containing the ASCII-encoded bytes representing the string "hello".
+  - Bytearray objects support various operations and methods for working with binary data, including:
+    - Indexing: Accessing individual bytes using index notation.
+      - CODE
+    - Slicing: Extracting a portion of the bytearray object.
+      - CODE
+    - Length: Getting the length of the bytearray object.
+      - CODE
+    - Modifying Bytes: Changing the value of bytes in the bytearray object.
+      - CODE
+    - Appending Bytes: Adding new bytes to the end of the bytearray object.
+      - CODE
+
+- Memoryview
+  - In Python, the memoryview data type provides a way to access the internal data of an object that supports the buffer protocol. It allows you to view the memory of an object without making a copy of it. This can be particularly useful when working with large amounts of data or when you want to avoid unnecessary memory duplication.
+  - The memoryview object acts as a view into the memory of another object, such as a bytes, bytearray, or even a list. It allows you to access and manipulate the underlying data using slicing, indexing, and other operations.
+  - You can create a memoryview object by passing an object that supports the buffer protocol to the memoryview() constructor. Here's an example:
+    - my_bytes = b'hello'
+    - my_memoryview = memoryview(my_bytes)
+      - In this example, my_memoryview is a memoryview object that provides a view into the memory of the my_bytes object.
+  - Memoryview objects support various operations and methods for accessing and manipulating the underlying data, including:
+    - Indexing: Accessing individual elements using index notation.
+      - CODE
+    - Slicing: Extracting a portion of the memoryview object.
+      - CODE
+    - Length: Getting the length of the memoryview object.
+      - CODE
+    - Conversion to Bytes: Converting the memoryview object to bytes.
+      - CODE
+    - Accessing Buffer Info: Getting information about the underlying buffer.
+      - CODE
+
 - Dictionary
   - In Python, a dictionary is a collection data type that is unordered, mutable, and consists of key-value pairs. Dictionaries are defined by enclosing comma-separated key-value pairs within curly braces {}. Each key-value pair is separated by a colon :. Here's a basic example of a dictionary:
     - CODE
@@ -65,6 +128,15 @@ A data type is an attribute associated with a piece of data that tells a compute
     - Mutable: You can add, remove, or modify key-value pairs in a dictionary after it is created.
     - Unique Keys: Keys in a dictionary must be unique. If you try to add a duplicate key, it will overwrite the existing value associated with that key.
 
+- NoneType
+  - In Python, NoneType is a data type that has only one value: None. It represents the absence of a value or a null value. None is commonly used to indicate that a variable or an expression doesn't have a meaningful value or hasn't been assigned a value yet.
+  - Here's an example of how None is used:
+    - my_variable = None
+      - In this example, my_variable is assigned the value None, indicating that it doesn't currently have a meaningful value.
+  - None is often used in conditional statements to check whether a variable has been assigned a value or not. For example:
+    - CODE
+      - In this example, the calculate_something() function returns None if it encounters an error or if the result is not available. The code checks whether the result is None before proceeding with further processing.
+  - It's important to note that None is not the same as False, 0, an empty string '', or an empty list []. Those values represent specific values (false, zero, empty string, empty list) whereas None represents the absence of any value.
 
 ## PYTHON LOOPS
   - In Python, a loop is a programming construct that allows you to execute a block of code repeatedly. There are two main types of loops in Python: for loops and while loops.
