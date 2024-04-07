@@ -27,14 +27,6 @@ A data type is an attribute associated with a piece of data that tells a compute
     - For example:
       - CODE
   - Lists can contain elements of different data types, including integers, floats, strings, and even other lists.
-  
-- Slicing
-  - In Python, slicing is a technique used to extract a portion (or a slice) of a sequence-like data type such as strings, lists, tuples, etc. Slicing allows you to retrieve a subset of elements from the original sequence based on specified start and stop indices.
-  - The syntax for slicing in Python is:
-    - CODE
-      - start: The index representing the beginning of the slice (inclusive). If omitted, slicing starts from the beginning of the sequence.
-      - stop: The index representing the end of the slice (exclusive). If omitted, slicing goes until the end of the sequence.
-      - step: The step size used to skip elements. If omitted, the default value is 1.
 
 - Tuple
   - In Python, a tuple is a collection data type that is ordered and immutable. This means once a tuple is created, you cannot change its content (i.e., you cannot add, remove, or modify elements). Tuples are defined by enclosing comma-separated values within parentheses (). Here's a basic example of a tuple:
@@ -44,6 +36,14 @@ A data type is an attribute associated with a piece of data that tells a compute
     - Ordered: Tuples maintain the order of elements as they are added.
     - Immutable: Once a tuple is created, its contents cannot be changed. This means you cannot add, remove, or modify elements in a tuple.
 
+- Range
+  - In Python, the range data type represents an immutable sequence of numbers. It is commonly used for iterating over a sequence of numbers in loops, particularly in for loops. The range type generates numbers on-the-fly, rather than storing them all in memory, making it memory efficient for large ranges.
+  - The syntax for creating a range object is:
+    - range(start, stop, step)
+      - start: The starting value of the range (inclusive). If omitted, it defaults to 0.
+      - stop: The ending value of the range (exclusive). This is the first value that is not included in the range.
+      - step: The increment (or decrement if negative) between each number in the range. If omitted, it defaults to 1.
+        
 - Set
   - In Python, a set is a collection data type that is unordered, mutable, and contains unique elements. Sets are defined by enclosing comma-separated values within curly braces {}. Sets do not allow duplicate elements, and they automatically remove any duplicates when the set is created or modified. Here's a basic example of a set:
     - CODE
@@ -123,3 +123,11 @@ A data type is an attribute associated with a piece of data that tells a compute
   - Dictionary elements can be accessed by their keys rather than their index as in lists.
   - Here's an example of a dictionary:
     - CODE
+
+## Slicing
+  - In Python, slicing is a technique used to extract a portion (or a slice) of a sequence-like data type such as strings, lists, tuples, etc. Slicing allows you to retrieve a subset of elements from the original sequence based on specified start and stop indices.
+  - The syntax for slicing in Python is:
+    - CODE
+      - start: The index representing the beginning of the slice (inclusive). If omitted, slicing starts from the beginning of the sequence.
+      - stop: The index representing the end of the slice (exclusive). If omitted, slicing goes until the end of the sequence.
+      - step: The step size used to skip elements. If omitted, the default value is 1.
